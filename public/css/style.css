@@ -1,3 +1,92 @@
+body, footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 16px;
+}
+
+.intro{
+    border: 1px solid aquamarine;
+    margin: 5% 10% 0 10%;
+}
+
 h1{
-    color: red;
+    font-size: 2rem;
+}
+
+p{
+    width: 90%;
+    margin: 0 5% 1% 5%;
+    font-size: 1.2rem;
+}
+
+
+.formSection {
+    border: 1px solid blueviolet;
+    margin: 5% 10% 0 10%;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+
+.advice {
+    border: 1px solid coral;
+    margin: 5% 10% 0 10%;
+}
+
+ul{
+    list-style: none;
+    font-size: 1.2rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+ul li {
+    width: 100%;
+}
+
+#adviceText {
+    font-size: 1.4rem;
+    width: 100%;
+    float: left;
+    padding: 1%;
+}
+
+#contributorName {
+    width: 100%;
+    float: left;
+    padding: 1%;
+}
+
+/* #likes {
+    width: 20%;
+    float: left;
+} */
+
+
+footer{
+ width: 80%;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 12px;
+  }
 }
