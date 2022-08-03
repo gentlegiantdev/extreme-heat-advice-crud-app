@@ -2,23 +2,23 @@ const deleteText = document.querySelectorAll('.fa-trash')
 const thumbText = document.querySelectorAll('.fa-thumbs-up')
 
 Array.from(deleteText).forEach((element)=>{
-    element.addEventListener('click', deleteAdvice)
+    element.addEventListener('click', deleteRapper)
 })
 
 Array.from(thumbText).forEach((element)=>{
     element.addEventListener('click', addLike)
 })
 
-async function deleteAdvice(){
+async function deleteRapper(){
     const sName = this.parentNode.childNodes[1].innerText
     const bName = this.parentNode.childNodes[3].innerText
     try{
-        const response = await fetch('deleteAdvice', {
+        const response = await fetch('deleteRapper', {
             method: 'delete',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
-              'advice_textS': sName,
-              'contributor_nameS': bName
+              'stageNameS': sName,
+              'birthNameS': bName
             })
           })
         const data = await response.json()
@@ -39,8 +39,8 @@ async function addLike(){
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
-              'advice_textS': sName,
-              'contributor_nameS': bName,
+              'stageNameS': sName,
+              'birthNameS': bName,
               'likesS': tLikes
             })
           })
