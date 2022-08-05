@@ -56,6 +56,7 @@ app.put('/addOneLike', (request, response) => {
 
 })
 
+
 app.delete('/deleteAdvice', (request, response) => {
     db.collection('extreme-heat-advice').deleteOne({adviceText: request.body.adviceTextS})
     .then(result => {

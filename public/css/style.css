@@ -23,6 +23,8 @@ body * {
 
 h1{
     font-size: 2rem;
+    color: red;
+     text-shadow: 2px 2px 2px #ffffff;
 }
 
 .introP{
@@ -94,20 +96,7 @@ form * {
     background: #ffffff;
     position: relative;
     background-color: rgba(365,365,365,0.5);
-    
-    &::before {
-        content: '';
-        border: 2px solid #124d90;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
-        border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
-        background-color: rgba(365,365,365,0.7);
-    }
-    
+
 }
 
 
@@ -125,6 +114,11 @@ form * {
     font-size: 0.8rem;
     padding-top: 5% 0 10% 0;
 }
+
+.fa-hand-holding-heart {
+    cursor: pointer; 
+}
+
 
 
 footer *{
@@ -148,47 +142,19 @@ footer *{
 
 body {
     margin: 0;
-    height: 100vh;
+    height: 300vh;
     font-weight: 300;
     background: radial-gradient(#52ccf2,#1f1013);
-    -webkit-overflow-Y: hidden;
+    /* -webkit-overflow-Y: hidden;
     -moz-overflow-Y: hidden;
     -o-overflow-Y: hidden;
-    overflow-y: hidden;
+    overflow-y: hidden; */
     -webkit-animation: fadeIn 1 1s ease-out;
     -moz-animation: fadeIn 1 1s ease-out;
     -o-animation: fadeIn 1 1s ease-out;
     animation: fadeIn 1 1s ease-out;
 }
 
-/* button{
-  position: absolute;
-  border: 2px solid white;
-  background: transparent;
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  width: 250px;
-  height: 50px;
-  font-size: 2em;
-  border-radius: 5px;
-  opacity: .5;
-  top: 60vh;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  margin: auto;
-  transition: .3s;
-}
-
-button:hover{
-  border: 2px solid #104F55;
-  background-color: rgba(365,365,365,0.5);
-  cursor: pointer;
-  color: #104F55;
-  opacity: .8;
-  transition: .3s;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-} */
 
 .light {
     position: absolute;

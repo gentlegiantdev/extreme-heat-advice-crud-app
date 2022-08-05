@@ -20,13 +20,14 @@
     <section class="intro">    
         <h1>Extreme Heat Advice*</h1>
         <p class="introP">Cases of extreme heat are rising across the globe.</p> 
-        <p class="introP">This app is meant to serve as a hub where people who have experience navigating extreme heat can share helpful advice for others.</p>
+        <p class="introP">This app is meant to serve as a hub where people who have experience navigating extreme heat can share helpful advice.</p>
+        <p class="introP">Feel free to see advice below, add your own, and upvote your favorites.</p> 
     </section>
 
     <section class="formSection">
         <h2>Add Your Advice:</h2>
         <form action="/addAdvice" method="POST">
-            <input type="textarea" placeholder="Your Advice" name="adviceText" class="adviceInput">
+            <input type="text" placeholder="Your Advice" name="adviceText" class="adviceInput">
             <input type="text" placeholder="Your Name" name="contributorName">
             <input type="submit">
         </form>
