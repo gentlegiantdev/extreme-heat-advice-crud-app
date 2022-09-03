@@ -2105,7 +2105,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #F79D5C;
+			border-color: #ABD1F3;
 		}
 
 	select {
@@ -2826,11 +2826,19 @@ input, select, textarea {
 		}
 
 		.main.style2 {
-			background-color: #333;
+			background-color: #950e5d;
+			/* background: linear-gradient(45deg, #ABD1F3, #6461A0, #C2E0F9); */
 			color: rgba(255, 255, 255, 0.75);
 			background-attachment: fixed,							fixed;
 			background-image: url("images/overlay1.png"), url("../../images/header.jpg");
-			background-size: auto,							cover;
+			background-size: auto,	
+		}
+
+		#four {
+			border: 5px solid;
+  			border-image: linear-gradient(45deg, #ABD1F3, #6461A0, #C2E0F9) 1;
+			background-color: rgb(51	67	98);
+			background-image: none;
 		}
 
 			.main.style2 a {
@@ -3588,11 +3596,9 @@ input, select, textarea {
 
 #scroll-button-section li:hover, #scroll-button-section li:active {
   border: 1px solid #F3752B;
-  background-color: linear-gradient(45deg, #F79D5C 5%, #F3752B 30%, #F52F57);;
-  color: #ffffff;
+  /* background-color: linear-gradient(45deg, #F79D5C 5%, #F3752B 30%, #F52F57);
+  color: #ffffff; */
 }
-
-
 
 
 
@@ -3623,27 +3629,32 @@ input, select, textarea {
     justify-content: space-center;
     text-align: center;
     list-style-type: none;
+	padding-left: 0;
 }
 
 .adviceList li{
     width: 90%;
-    margin: 5% 10% 0 0;
+    margin: 5% 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-center;
-    color: #124d90;
+    color: white;
 
     padding: 0.5rem;
-    border: 3px solid #2566b1;
-    text-shadow: 2px 2px 2px #3793fb;
-    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+	border-width: 4px;
+ 	border: 5px solid;
+  	border-image: linear-gradient(45deg, #ABD1F3, #6461A0, #C2E0F9) 1;
+
     letter-spacing: 0.3ch;
-    background: #ffffff;
+    background-color: rgba(8, 61, 119, .8);
     position: relative;
-    background-color: rgba(365,365,365,0.5);
+    /* background-color: rgba(365,365,365,0.5); */
 }
 
+#likes {
+	color: #C2E0F9;
+}
 
 .adviceSection ul li span {
     padding: 2%;
@@ -3728,3 +3739,4 @@ footer{
       }
 
 		}
+
