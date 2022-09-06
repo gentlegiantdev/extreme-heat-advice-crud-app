@@ -1114,9 +1114,9 @@
 
 	#header {
 		@include padding(9em, 0, (0,0,_size(element-margin),0));
-		@include dark(#4686a0);
+		@include dark(#F79D5C);
 		background-attachment:	fixed,							fixed,							fixed;
-		background-image:		url('images/overlay2.png'),		url('images/overlay3.svg'),		linear-gradient(45deg, _palette(accent1-alt) 5%, _palette(accent3-alt) 30%, _palette(accent6-alt));
+		background-image:		url('images/overlay2.png'),		url('images/overlay3.svg'),		linear-gradient(45deg,#F79D5C 5%, #F3752B 30%, #F52F57);
 		background-position:	top left,						center center,					center center;
 		background-size:		auto,							cover,							cover;
 		overflow: hidden;
@@ -1144,7 +1144,7 @@
 			}
 
 			&:after {
-				background: _palette(dark, border);
+				background-image: linear-gradient(45deg,#F79D5C 5%, #F3752B 30%, #F52F57);
 				content: '';
 				height: 100vh;
 				left: 50%;
@@ -1172,7 +1172,7 @@
 
 		&:after {
 			@include vendor('transition', 'opacity 1s ease');
-			background-image: linear-gradient(45deg, _palette(accent3-alt), _palette(accent6-alt));
+			background-image: linear-gradient(45deg,#F79D5C 5%, #F3752B 30%, #F52F57);
 			content: '';
 			height: 100%;
 			left: 0;
