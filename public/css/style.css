@@ -3691,6 +3691,8 @@ input, select, textarea {
 #contributor-form {
   width: 20rem;
   margin-bottom: 2rem;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #footer span{
